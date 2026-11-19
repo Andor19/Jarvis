@@ -19,7 +19,7 @@ jobs:
           cache: true
 
       - run: flutter pub get
-      - run: flutter build apk --release --no-daemon
+      - run: flutter build apk --release
 
       - uses: actions/upload-artifact@v4
         with:
